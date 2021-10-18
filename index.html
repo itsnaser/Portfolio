@@ -1,5 +1,5 @@
 <head>
-   
+
    <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="description" content="">
@@ -17,14 +17,15 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
    <script src='assets/js/vendor/html5shiv.min.js'></script>
-   <link rel="icon" type="image/ico" href="fav.ico"/>
-   
+   <link rel="icon" type="image/ico" href="fav.ico" />
 
 
 
 
-   <link rel="icon" type="image/png" href="assets/img/favicon.png"/>
+
+   <link rel="icon" type="image/png" href="assets/img/favicon.png" />
 </head>
+
 <body onLoad="scrlsts()">
    <div class="site-loader">
       <span></span>
@@ -32,8 +33,8 @@
    </div>
    <div class="pmeme">
    </div>
-	  <div class="site-bg">
-      <div class="site-bg__overlay"></div> 
+   <div class="site-bg">
+      <div class="site-bg__overlay"></div>
       <div class="site_countdown"></div>
       <div class="site-bg__effect"></div>
       <canvas class="site-bg__canvas"></canvas>
@@ -44,19 +45,26 @@
          <div id="main">
             <header id="header">
                <h1>Naser</h1>
-			   <br>
-               <h2><font size="5">UI/UX Graphic Designer</font></h2>
-			   <h2><font size="2">Find me on the following platforms</font></h2>
-			   <br>
+               <br>
+               <h2>
+                  <font size="5">UI/UX Graphic Designer</font>
+               </h2>
+               <h2>
+                  <font size="2">Find me on the following platforms</font>
+               </h2>
+               <br>
                <nav>
                   <ul>
-                     <li><a href="https://www.github.com/itsnaser" target="_blank" class="icon fa-spin fa-github" target="_blank"><span class="label">Github</span></a></li>
-                     <li><a href="https://www.linkedin.com/in/itsnaser/" target="_blank" class="icon fa-spin fa-linkedin" target="_blank"><span class="label">Linkedin</span></a></li>
-                     <li><a href="mailto:wcvwui@gmail.com"" class="icon fa-spin fa-envelope" target="_blank"><span class="label" >Mail</span> </a></li>
+                     <li><a href="https://www.github.com/itsnaser" target="_blank" class="icon fa-spin fa-github"
+                           target="_blank"><span class="label">Github</span></a></li>
+                     <li><a href="https://www.linkedin.com/in/itsnaser/" target="_blank"
+                           class="icon fa-spin fa-linkedin" target="_blank"><span class="label">Linkedin</span></a></li>
+                     <li><a href="mailto:wcvwui@gmail.com"" class=" icon fa-spin fa-envelope" target="_blank"><span
+                              class="label">Mail</span> </a></li>
 
                   </ul>
                </nav>
-            </header> 
+            </header>
          </div>
       </div>
    </div>
@@ -67,117 +75,114 @@
    <script src='assets/js/main.js'></script>
    <script src='assets/js/demo.js'></script>
 </body>
+
 <head>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
    <script language="JavaScript">
       //////////F12 disable code////////////////////////
-          document.onkeypress = function (event) {
-              event = (event || window.event);
-              if (event.keyCode == 123) {
-                 //alert('No F-12');
-                  return false;
-              }
-          }
-          document.onmousedown = function (event) {
-              event = (event || window.event);
-              if (event.keyCode == 123) {
-                  //alert('No F-keys');
-                  return false;
-              }
-          }
-      document.onkeydown = function (event) {
-              event = (event || window.event);
-              if (event.keyCode == 123) {
-                  //alert('No F-keys');
-                  return false;
-              }
-          }
-      var message=":o";      
-      function clickIE() {if (document.all) {(message);return false;}}
-      function clickNS(e) {if
-      (document.layers||(document.getElementById&&!document.all)) {
-      if (e.which==2||e.which==3) {(message);return false;}}}
-      if (document.layers)
-      {document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
-      else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
-      document.oncontextmenu=new Function("return false")
-      function disableCtrlKeyCombination(e)
-      {
-      var forbiddenKeys = new Array('a', 'n', 'c', 'x', 'v', 'j' , 'w');
-      var key;
-      var isCtrl;
-      if(window.event)
-      {
-      key = window.event.keyCode;
-      if(window.event.ctrlKey)
-      isCtrl = true;
-      else
-      isCtrl = false;
-      }
-      else
-      {
-      key = e.which;
-      if(e.ctrlKey)
-      isCtrl = true;
-      else
-      isCtrl = false;
-      }
-      if(isCtrl)
-      {
-      for(i=0; i<forbiddenKeys.length; i++)
-      {
-      if(forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase())
-      {
-      alert('Key combination CTRL + '+String.fromCharCode(key) +' has been disabled.');
-      return false;
-      }
-      }
-      }
-      return true;
-      }
-	</script>
-	
-	<script type="text/javascript">
-		window.onkeydown = function(evt) {
-			if(evt.keyCode == 123 || evt.keyCode == 85 || evt.keyCode == 17 || evt.keyCode == 16 || evt.keyCode == 74 || evt.keyCode == 116 || evt.keyCode == 73) return false;
-		};
-
-		window.onkeypress = function(evt) {
-			if(evt.keyCode == 123 || evt.keyCode == 85 || evt.keyCode == 17 || evt.keyCode == 16 || evt.keyCode == 74 || evt.keyCode == 116 || evt.keyCode == 73) return false;
-		};
-
-		function disableF5(e) { if ((e.which || e.keyCode) == 116) e.preventDefault(); };
-		$(document).on("keydown", disableF5);
-
-	</script>
-	<script type="text/javascript">
-         var msg  = document.title ="Eyesense";
-         var speed = 300;
-         var endChar = " | ";
-         var pos = 0;
-         
-         function moveTitle()
-         {
-              var ml = msg.length;
-                 
-             title = msg.substr(pos,ml) + endChar + msg.substr(0,pos);
-           document.title = title;
-             
-           pos++;
-           if (pos > ml) pos=0;
-           window.setTimeout("moveTitle()",speed);
+      document.onkeypress = function (event) {
+         event = (event || window.event);
+         if (event.keyCode == 123) {
+            //alert('No F-12');
+            return false;
          }
-     
-         moveTitle();
+      }
+      document.onmousedown = function (event) {
+         event = (event || window.event);
+         if (event.keyCode == 123) {
+            //alert('No F-keys');
+            return false;
+         }
+      }
+      document.onkeydown = function (event) {
+         event = (event || window.event);
+         if (event.keyCode == 123) {
+            //alert('No F-keys');
+            return false;
+         }
+      }
+      var message = ":o";
+      function clickIE() { if (document.all) { (message); return false; } }
+      function clickNS(e) {
+         if
+            (document.layers || (document.getElementById && !document.all)) {
+            if (e.which == 2 || e.which == 3) { (message); return false; }
+         }
+      }
+      if (document.layers) { document.captureEvents(Event.MOUSEDOWN); document.onmousedown = clickNS; }
+      else { document.onmouseup = clickNS; document.oncontextmenu = clickIE; }
+      document.oncontextmenu = new Function("return false")
+      function disableCtrlKeyCombination(e) {
+         var forbiddenKeys = new Array('a', 'n', 'c', 'x', 'v', 'j', 'w');
+         var key;
+         var isCtrl;
+         if (window.event) {
+            key = window.event.keyCode;
+            if (window.event.ctrlKey)
+               isCtrl = true;
+            else
+               isCtrl = false;
+         }
+         else {
+            key = e.which;
+            if (e.ctrlKey)
+               isCtrl = true;
+            else
+               isCtrl = false;
+         }
+         if (isCtrl) {
+            for (i = 0; i < forbiddenKeys.length; i++) {
+               if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+                  alert('Key combination CTRL + ' + String.fromCharCode(key) + ' has been disabled.');
+                  return false;
+               }
+            }
+         }
+         return true;
+      }
    </script>
 
-   
+   <script type="text/javascript">
+      window.onkeydown = function (evt) {
+         if (evt.keyCode == 123 || evt.keyCode == 85 || evt.keyCode == 17 || evt.keyCode == 16 || evt.keyCode == 74 || evt.keyCode == 116 || evt.keyCode == 73) return false;
+      };
+
+      window.onkeypress = function (evt) {
+         if (evt.keyCode == 123 || evt.keyCode == 85 || evt.keyCode == 17 || evt.keyCode == 16 || evt.keyCode == 74 || evt.keyCode == 116 || evt.keyCode == 73) return false;
+      };
+
+      function disableF5(e) { if ((e.which || e.keyCode) == 116) e.preventDefault(); };
+      $(document).on("keydown", disableF5);
+
+   </script>
+   <script type="text/javascript">
+      var msg = document.title = "Naser";
+      var speed = 300;
+      var endChar = " | ";
+      var pos = 0;
+
+      function moveTitle() {
+         var ml = msg.length;
+
+         title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+         document.title = title;
+
+         pos++;
+         if (pos > ml) pos = 0;
+         window.setTimeout("moveTitle()", speed);
+      }
+
+      moveTitle();
+   </script>
+
+
 </head>
 
 <body oncontextmenu="return false;" unselectable="on" onselectstart="return false;">
 
-	<div class="container" style="height: 100%; display: flex; align-items: center; justify-content: center; margin: 0 auto">
-  
+   <div class="container"
+      style="height: 100%; display: flex; align-items: center; justify-content: center; margin: 0 auto">
+
 </body>
 
 </html>
